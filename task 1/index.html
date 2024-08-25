@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task one</title>
+  <link rel="stylesheet" href="./stylesheet/style.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.webp" type="image/x-icon" sizes="32x32">
+
+  <!-- google icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primaryColor: '#F9F8F2',
+            secondaryColor: '#0F866C',
+            btnHoverColor: '#D4E300',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+
+  <!-- header element -->
+  <header>
+
+    <!-- nav element -->
+    <nav class="">
+      <div class="nav-container px-[30px] md:px-[120px] py-[10px]">
+        <a href="">
+          <img src="./images/brandLogo.png" class="w-[100px] md:w-[200px] cursor-pointer" alt="brandLogo" srcset="">
+        </a>
+        <div class="flex flex-row items-center gap-1 cursor-pointer font-medium hover:text-secondaryColor">
+          <span class="material-symbols-rounded">
+            language
+          </span>
+          <span>English</span>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- main element -->
+  <main>
+
+    <!-- hero section -->
+    <section>
+
+      <div class="hero-container bg-gradient-to-b from-[#E1D9CA] to-[#F6AA80] md:h-[100dvh] w-[100%]">
+  
+        <img src="./images/homepage-pingzhu-hero-bg-opt-v2-3ce3022343c7ad918545a6a2e01f36b5.avif" class="relative w-[100%] object-cover h-[70dvh] md:h-[100dvh]" alt="">
+        
+        <!-- hero text container -->
+        <div class="flex flex-col gap-3 md:gap-5 py-[100px] absolute">
+          
+          <h1 class="font-black text-3xl md:text-7xl subHeading">The VPN that just works</h1>
+          <h2 class="text-center font-bold text-sm md:text-xl subHeading">Go further with the #1 trusted leader in VPN</h2>
+          <a href="" class="py-4 px-[50px] font-bold bg-secondaryColor text-[#FFFFFF] hover:bg-btnHoverColor hover:text-[#000000] ease-in-out duration-300 rounded-full mx-auto">
+            Get ExpressVPN
+          </a>
+          <h3 class="text-center subHeading text-[10px]">30-DAY MONEY-BACK QUARANTEE</h3>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+  
+</body>
+</html>
