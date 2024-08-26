@@ -10,4 +10,7 @@ window.addEventListener('scroll', () => {
     getNavbar.classList.remove('navbarScrollBg');
   }
 
+  // tried hands on tenary operator
+  // getNavbar = (window.scrollY > 100) ? getNavbar.classList.add('navbarScrollBg') : getNavbar.classList.remove('navbarScrollBg');
+
 });
