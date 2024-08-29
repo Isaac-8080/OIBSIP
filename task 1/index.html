@@ -39,7 +39,7 @@
         <a href="">
           <img src="./images/brandLogo.png" class="w-[100px] md:w-[200px] cursor-pointer" alt="brandLogo" srcset="">
         </a>
-        <div class="flex flex-row items-center gap-1 cursor-pointer font-medium hover:text-secondaryColor">
+        <div id="lang" class="flex flex-row items-center gap-1 cursor-pointer font-medium hover:text-secondaryColor">
           <span class="material-symbols-rounded">
             language
           </span>
@@ -50,8 +50,94 @@
 
   </header>
 
+   
+  
   <!-- main element -->
   <main>
+
+    <div id="langPopup" class="flex flex-row items-center justify-center ease-in-out duration-300 fixed h-[100dvh] w-full z-10 hidden">
+      
+      <div class="langPopupExit relative w-[100%] h-[100%] bg-[#000000] opacity-75">
+        
+      </div>
+
+      <div class="absolute bg-[#FFFFFF] w-fit mx-auto p-10 rounded-xl">
+        <div class="flex flex-row items-center justify-between">
+          <span></span>
+          <span class="material-symbols-rounded langPopupExit cursor-pointer">close</span>
+        </div>
+
+        <p class="font-bold text-center mb-5 text-2xl">Choose language</p>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-y-3 gap-x-16">
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Dansk</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Deutsch</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Español</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Suomi</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Français</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Indonesian</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Italiano</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Magyar</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Nederlands</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Norsk</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Polski</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Português</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Pусский</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Svenska</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Türkçe</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Українська</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">Tiếng Việt</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">العربية</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">ภาษาไทย</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">日本語</p>
+          </div>
+          <div>
+            <p class="font-medium cursor-pointer text-[14px] text-[gray] hover:text-secondaryColor w-fit">한국어</p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
 
     <!-- hero section -->
     <section>
@@ -146,7 +232,7 @@
             <p class="underline text-secondaryColor">See all apps ></p>
           </a>
 
-          <input type="button" value="Get ExpressVPN" class="py-3 px-[30px] font-bold bg-secondaryColor text-[#FFFFFF] hover:bg-btnHoverColor hover:text-[#000000] ease-in-out duration-300 rounded-3xl w-fit">
+          <input type="button" value="Get ExpressVPN" class="py-3 px-[30px] font-bold bg-secondaryColor text-[#FFFFFF] hover:bg-btnHoverColor hover:text-[#000000] ease-in-out duration-300 rounded-3xl w-fit cursor-pointer">
 
         </div>
 
@@ -187,8 +273,35 @@
 
   </main>
 
-  <footer>
+  <!-- footer element -->
+  <footer class="bg-[#FDF3F4]">
+    <div class=" mt-[20px] md:mt-[50px] py-[20px]">
 
+      <p class="text-center font-bold text-[20px]">Ultra-fast servers around the globe</p>
+
+      <div class="flex flex-row items-center justify-center gap-5">
+        <img src="./images/worldmap.png" class="relative" alt="">
+        <div class="flex flex-row md:flex-col items-center justify-center gap-3 md:gap-5 absolute md:relative">
+          <span>
+            <p class="font-medium text-5xl heading">160</p>
+            <p class="font-bold text-[#111]">locations</p>
+          </span>
+          <span>
+            <p class="font-medium text-5xl heading">94</p>
+            <p class="font-bold text-[#111]">countries</p>
+          </span>
+          <span>
+            <img src="./icons/icons8-infinity-symbol-60.png" class="" alt="">
+            <p class="font-bold text-[#111]">unlimited <br>bandwidth</p>
+          </span>
+        </div>
+      </div>
+
+      <a href="">
+        <p class="underline text-secondaryColor text-center mt-[20px] hover:text-btnHoverColor">See our full list of VPN server location></p>
+      </a>
+
+    </div>
   </footer>
   
   <script src="./script/main.js"></script>
