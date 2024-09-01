@@ -5,9 +5,13 @@ window.addEventListener('scroll', () => {
   let getNavbar = document.querySelector('#navbar');
 
   if (window.scrollY > 100) {
+
     getNavbar.classList.add('navbarScrollBg');
+
   } else {
+
     getNavbar.classList.remove('navbarScrollBg');
+    
   }
 
   // tried hands on tenary operator
@@ -23,7 +27,9 @@ getLang.addEventListener('click', () => {
   const getLangPopup = document.querySelector('#langPopup');
   
   if (getLangPopup.classList.contains('hidden')) {
+
     getLangPopup.classList.remove('hidden');
+
   }
   
 });
@@ -38,7 +44,7 @@ for (let i = 0; i < getLangPopupExit.length; i++) {
   
     const getLangPopup = document.querySelector('#langPopup');
   
-    getLangPopup.classList.add('hidden')
+    getLangPopup.classList.add('hidden');    
   
   });
 
