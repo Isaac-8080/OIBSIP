@@ -19,9 +19,9 @@
         extend: {
           colors: {
             primaryColor: '#1EABE2',
+            secondaryColor: '#333647',
             darkTextColor: '#C1C1C1',
             sectionColor: '#252734',
-            secondaryColor: '#333647',
           }
         }
       }
@@ -36,7 +36,7 @@
     <!-- navigation elements -->
     <nav>
 
-      <div id="nav" class="flex flex-row light-theme items-center justify-between h-[60px] px-10 z-[500] opacity-95">
+      <div id="nav" class="flex flex-row light-theme items-center justify-between h-[60px] px-10 opacity-95 z-[500]">
 
         <!-- nav brand -->
         <a href="https://github.com/Isaac-8080" target="_blank">
@@ -133,6 +133,62 @@
 
   </header>
 
+  <main>
+    
+    <!-- hero section -->
+    <section id="hero-section" class="h-[90dvh] rounded">
+
+      <div class="flex flex-col md:flex-row items-center justify-center gap-2 h-[90dvh]">
+
+        <img src="./images/image.png" class="w-[150px] border-[5px] rounded-full" alt="my head shot" srcset="">
+        
+        <div class="px-5 flex flex-col gap-2">
+          
+          <p class="px-2 bg-[#FFFFFF] w-fit rounded-lg border border-primary animate-bounce text-primaryColor text-[12px] font-medium mt-2">Open to work</p>
+
+          <p class="font-bold text-[20px] text-left">Hey, I'm Isaac</p>
+
+          <h1 class="text-6xl font-black text-[#FFFFFF]">
+            Building Innovative <br> <span class="opacity-95 drop-shadow">Solutions with Code.</span>
+          </h1>
+
+          <h2 class="text-2xl font-black opacity-95 hidden md:flex">
+            Full-stack developer with a passion for creating <br> scalable and efficient software
+          </h2>
+
+          <div class="flex flex-row flex-wrap items-center gap-x-2 gap-y-5">
+
+            <div>
+              <a href="https://www.linkedin.com/in/isaac-opoku-manu?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bsy%2FrhL%2F0St26ZVB00Nfm6A%3D%3D" target="_blank" class="py-2 px-3 bg-[#FFFFFF] w-fit rounded-3xl border hover:border-2 ease-in-out duration-300 border-primaryColor text-primaryColor text-[12px] font-bold">LinkedIn</a>
+            </div>
+
+            <div>
+              <a href="https://gradeone.vercel.app/" class="py-2 px-3 bg-primaryColor w-fit rounded-3xl border hover:border-2 ease-in-out duration-300 border-primaryColor text-[#FFFFFF] text-[12px] font-bold" target="_blank">GradeOne</a>
+            </div>
+
+            <div>
+              <a href="mailto:isaacmanuopoku@gmail.com" class="py-2 px-3 bg-[#FFFFFF] w-fit rounded-3xl border hover:border-2 ease-in-out duration-300 border-primaryColor text-primaryColor text-[12px] font-bold">isaacmanuopoku@gmail.com</a>
+            </div>
+            
+            <div>
+              <a href="https://github.com/Isaac-8080" target="_blank" class="py-2 px-3 bg-[#FFFFFF] w-fit rounded-3xl border hover:border-2 ease-in-out duration-300 border-primaryColor text-primaryColor text-[12px] font-bold">Github</a>
+            </div>
+            
+
+          </div>
+
+        </div>
+        
+      </div>
+      
+      <a href="#" class="material-symbols-rounded fixed bottom-5 right-5 bg-[#111] text-[#FFFFFF] rounded-full p-1 cursor-pointer z-[1000]" title="back to top">arrow_upward</a>
+      
+    </section>
+    
+    
+    
+  </main>
+  
   <script src="./script/main.js"></script>
 </body>
 </html>

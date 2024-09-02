@@ -3,8 +3,8 @@
 
 :root{
   --primaryColor: #FBFCF8;
-  /* --secondaryColor: #333647; */
-  --secondaryColor: #212121;
+  --secondaryColor: #373B40;
+  /* --secondaryColor: #212121; */
   --darkTextColor: #C1C1C1;
   --lightTextColor: #000000;
 }
@@ -31,6 +31,10 @@ body {
   background-color: var(--secondaryColor);
   color: var(--darkTextColor);
   transition: all ease-in-out 0.5s;
+}
+
+.whiteHeroBg{
+  background: linear-gradient(to bottom, #0B7285, #FFFFFF)
 }
 
 nav {

@@ -1,14 +1,11 @@
-// light and dark theme toggle
+/* light and dark theme toggle */
 
-const getThemeToggle = document.getElementsByClassName('theme-btn');
+const body = document.body; // get document body
 
-// get document body
-const body = document.body;
+const savedLocalStorage = localStorage.getItem('theme', 'light'); // getting theme status in localStorage
 
-// getting theme status in localStorage
-const savedLocalStorage = localStorage.getItem('theme', 'light');
 
-// localStorage to check if the theme is dark
+// localStorage to check if the theme is light
 if (savedLocalStorage === 'light') {
 
   body.classList.add('light-theme');
@@ -17,15 +14,21 @@ if (savedLocalStorage === 'light') {
 
   document.querySelector('#sm-navbar').classList.add('light-theme');
 
+  document.querySelector('#hero-section').classList.add('whiteHeroBg');
+  
 } else {
-
+  
   body.classList.add('dark-theme');
-
+  
   document.querySelector('#nav').classList.add('dark-theme');
   
   document.querySelector('#sm-navbar').classList.add('dark-theme');
 
+  document.querySelector('#hero-section').classList.remove('whiteHeroBg');
+  
 }
+
+const getThemeToggle = document.getElementsByClassName('theme-btn');
 
 for (let i = 0; i < getThemeToggle.length; i++) {
   
@@ -40,26 +43,30 @@ for (let i = 0; i < getThemeToggle.length; i++) {
       document.querySelector('#nav').classList.remove('dark-theme');
 
       document.querySelector('#nav').classList.add('light-theme');
-
+      
       document.querySelector('#sm-navbar').classList.remove('dark-theme');
-
+      
       document.querySelector('#sm-navbar').classList.add('light-theme');
 
+      document.querySelector('#hero-section').classList.add('whiteHeroBg');
+      
       localStorage.setItem('theme', 'light');
-
+      
     } else {
-
+      
       body.classList.remove('light-theme');
-
+      
       body.classList.add('dark-theme');
 
       document.querySelector('#nav').classList.remove('light-theme');
-
+      
       document.querySelector('#nav').classList.add('dark-theme');
-
+      
       document.querySelector('#sm-navbar').classList.remove('light-theme');
 
       document.querySelector('#sm-navbar').classList.add('dark-theme');
+      
+      document.querySelector('#hero-section').classList.remove('whiteHeroBg');
 
       localStorage.setItem('theme', 'dark');
 
