@@ -130,16 +130,16 @@ for (let i = 0; i < getExitNavMenu.length; i++) {
 }
 
 
-// navbar position fixed on scroll
+// navbar opacity fixed on scroll
 document.addEventListener('scroll', () => {
 
-  if (window.scrollY > 600) {
+  if (window.scrollY > 100) {
 
-    document.querySelector('#nav').classList.add('display-nav');
-
+    document.querySelector('#nav').classList.remove('navbar-transparent');
+        
   } else {
-
-    document.querySelector('#nav').classList.remove('display-nav');
+    
+    document.querySelector('#nav').classList.add('navbar-transparent');
 
   }
   
