@@ -36,7 +36,7 @@
     <!-- navigation elements -->
     <nav>
 
-      <div id="nav" class="flex flex-row light-theme items-center navbar fixed top-0 right-0 left-0 justify-between opacity-95 h-[60px] px-10 z-[500]">
+      <div id="nav" class="flex flex-row-reverse md:flex-row light-theme items-center navbar fixed top-3 right-3 left-3  rounded-full justify-between opacity-95 h-[60px] px-10 z-[500]">
 
         <!-- nav brand -->
         <a href="https://github.com/Isaac-8080" target="_blank">
@@ -136,11 +136,11 @@
   <main>
     
     <!-- hero section -->
-    <section id="hero-section" class="h-[90dvh] rounded">
+    <section id="hero-section" class="h-[100dvh] rounded">
 
-      <div class="flex flex-col md:flex-row items-center justify-center gap-2 h-[90dvh]">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-2 h-[100dvh]">
 
-        <img src="./images/image.png" class="w-[150px] border-[5px] rounded-full" alt="my head shot" srcset="">
+        <img src="./images/image.png" class="w-[200px] border-[5px] rounded-full" alt="my head shot" srcset="">
         
         <div class="px-5 flex flex-col gap-2">
           
@@ -185,9 +185,291 @@
       
     </section>
     
-    
+    <span id="projects" class=""></span>
+    <!-- projects section -->
+    <section class="px-5 lg:px-[150px] mt-[50px]">
+
+      <div class="">
+
+        <div class="flex flex-row items-center gap-2" data-aos="zoom-in-out" data-aos-duration="1000">
+          <span class="material-symbols-rounded text-primaryColor font-black text-3xl">
+            new_releases
+          </span>
+          <h3 class="font-black text-3xl">Latest Projects</h3>
+        </div>
+
+        <div class="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-10">
+
+          <!-- Eco-R -->
+          <div class="w-fit rounded-xl" data-aos="zoom-in-out" data-aos-duration="1000">
+
+            <div class="cursor-pointer drop-shadow-md w-fit">
+              
+              <!-- <div> -->
+                <img src="./images/eco-r.png" class="w-[100%] rounded-xl" alt="project-img" srcset="">
+              <!-- </div> -->
+              
+            </div>
+
+            <!-- project name -->
+            <h4 class="mt-3 text-primaryColor font-bold w-fit m-1">Eco-R</h4>
+            
+            <!-- project description -->
+            <div>
+              <p class="font-medium text-[14px] m-1">
+                Collaborated on creating the website for Eco-R, which turns waste into sustainable products for a greener planet.
+              </p>
+            </div>
+              
+            <!-- projects technologies div -->
+            <div class="flex flex-col justify-center m-1">
+              <div class="flex flex-row flex-wrap items-center gap-2 mt-1">
+
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-javascript-48.png" class="w-5" alt="JavaScript icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">JavaScript</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-tailwind-css-48.png" class="w-5" alt="tailwind css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">Tailwind CSS</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-css-48.png" class="w-5" alt="css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">CSS</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-html-48.png" class="w-5" alt="css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">HTML</p>
+                </div>
+  
+              </div>
+
+              <hr class="mt-2 mb-1 w-[150px]">
+
+              <div class="flex flex-row items-center justify-between">
+                
+                <p class="flex flex-row items-center gap-1 text-primaryColor font-bold text-[14px]">
+                  <span class="material-symbols-rounded font-black text-lg">line_end_arrow_notch</span>
+                  <a>Private Repo</a> | <a href="https://eco-r-psi.vercel.app/" target="_blank" class="hover:bg-[lightgray] p-1 rounded">Demo</a>
+                </p>
+  
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Darasa Reports -->
+          <div class="w-fit rounded-xl" data-aos="zoom-in-out" data-aos-duration="1000">
+
+            <div class="cursor-pointer drop-shadow-md w-fit">
+              
+              <div>
+                <img src="./images/darasa-reports-img.png" class="w-[100%] rounded-xl" alt="project-img" srcset="">
+              </div>
+              
+            </div>
+
+            <!-- project name -->
+            <h4 class="mt-3 text-primaryColor font-bold m-1">Darasa Reports</h4>
+            
+            <!-- project description -->
+            <div>
+              <p class="font-medium text-[14px] m-1">
+                An intuitive student information system and gradebook for African schools, designed to simplify student data management and enhance educational efficiency.
+              </p>
+            </div>
+              
+            <!-- projects technologies div -->
+            <div class="flex flex-col justify-center m-1">
+              <div class="flex flex-row flex-wrap items-center gap-2 mt-1">
+
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-javascript-48.png" class="w-5" alt="JavaScript icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">JavaScript</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-tailwind-css-48.png" class="w-5" alt="tailwind css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">Tailwind CSS</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-css-48.png" class="w-5" alt="css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">CSS</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-html-48.png" class="w-5" alt="css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">HTML</p>
+                </div>
+  
+              </div>
+
+              <hr class="mt-2 mb-1 w-[150px]">
+
+              <div class="flex flex-row items-center justify-between">
+                
+                <p class="flex flex-row items-center gap-1 text-primaryColor font-bold text-[14px]">
+                  <span class="material-symbols-rounded font-black text-lg">line_end_arrow_notch</span>
+                  <a>Private Repo</a> | <a href="https://darasa-Reports.vercel.app/" target="_blank" class="hover:bg-[lightgray] p-1 rounded">Demo</a>
+                </p>
+  
+              </div>
+
+            </div>
+
+          </div>
+          
+          <!-- GradeOne -->
+          <div class="w-fit rounded-xl" data-aos="zoom-in-out" data-aos-duration="1000">
+
+            <div class="cursor-pointer drop-shadow-md w-fit">
+              
+              <div>
+                <img src="./images/gradeone-img.png" class="w-[100%] rounded-xl" alt="project-img" srcset="">
+              </div>
+              
+            </div>
+
+            <!-- project name -->
+            <h4 class="mt-3 text-[#FFFFFF] font-bold w-fit px-1 bg-primaryColor m-1 rounded">GradeOne</h4>
+            
+            <!-- project description -->
+            <div>
+              <p class="font-medium text-[14px] m-1">
+                An ongoing personal project designed to simplify and enhance learning. GradeOne offers a user-friendly platform with affordable access to a vast collection of educational resources.
+              </p>
+            </div>
+              
+            <!-- projects technologies div -->
+            <div class="flex flex-col justify-center m-1">
+              <div class="flex flex-row flex-wrap items-center gap-2 mt-1">
+
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-javascript-48.png" class="w-5" alt="JavaScript icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">JavaScript</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-tailwind-css-48.png" class="w-5" alt="tailwind css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">Tailwind CSS</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-css-48.png" class="w-5" alt="css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">CSS</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-html-48.png" class="w-5" alt="css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">HTML</p>
+                </div>
+  
+              </div>
+
+              <hr class="mt-2 mb-1 w-[150px]">
+
+              <div class="flex flex-row items-center justify-between">
+                
+                <p class="flex flex-row items-center gap-1 text-primaryColor font-bold text-[14px]">
+                  <span class="material-symbols-rounded font-black text-lg">line_end_arrow_notch</span>
+                  <a>Private Repo</a> | <a href="https://gradeone.vercel.app/" target="_blank" class="hover:bg-[lightgray] p-1 rounded">Demo</a>
+                </p>
+  
+              </div>
+
+            </div>
+
+          </div>
+          
+          <!-- <div class="w-fit hover:translate-y-1 easy-to-use duration-200" data-aos="zoom-in-out" data-aos-duration="1000">
+
+            <h4 class="mt-3 text-primaryColor font-bold pl-3">Personal Portfolio</h4>
+
+            <div class="flex flex-row items-center rounded-2xl cursor-pointer drop-shadow-md w-fit">
+
+              <div class="mt-3">
+                <img src="./images/portfolio-img.png" class="w-[100%] rounded-2xl" alt="project-img" srcset="">
+              </div>
+
+            </div>
+
+            projects technologies div
+            <div class="pl-3">
+              <div class="flex flex-row flex-wrap items-center gap-2 mt-1">
+
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-javascript-48.png" class="w-5" alt="JavaScript icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">JavaScript</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-tailwind-css-48.png" class="w-5" alt="tailwind css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">Tailwind CSS</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-css-48.png" class="w-5" alt="css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">CSS</p>
+                </div>
+                
+                <div class="flex flex-row items-center gap-1">
+                  <img src="./icons/icons8-html-48.png" class="w-5" alt="css icon" srcset="">
+                  <p class="w-fit text-[10px] font-bold">HTML</p>
+                </div>
+  
+              </div>
+            </div>
+            <hr class="mt-2 mb-1 w-[150px] ml-3">
+
+            <div class="flex flex-row items-center justify-between pl-3">
+              
+              <p class="flex flex-row items-center gap-1 text-primaryColor font-bold text-[14px]">
+                <span class="material-symbols-rounded font-black text-lg">line_end_arrow_notch</span>
+                <a>Private Repo</a> | <a href="">Demo</a>
+              </p>
+
+            </div>
+
+          </div> -->
+          
+          
+
+        </div>
+
+      </div>
+
+    </section>
     
   </main>
+
+  <footer class="px-5 lg:px-[150px] bg-secondaryColo py-20">
+        
+    <div class="flex flex-col items-center gap-5">
+      
+      <a href="https://github.com/Isaac-8080" target="_blank" class="hover:translate-y-2 easy-to-use duration-300">
+        <img src="./icons/icons8-github-48.png" alt="github logo" srcset="" title="github account">
+      </a>
+
+      <div>
+        <p class="text-darkTextColor"><span class="font-bold">Thanks for scrolling</span>. Can't wait to here form you!</p>
+      </div>
+
+      <div class="flex flex-row flex-wrap items-center gap-3">
+
+        <a href="https://www.linkedin.com/in/isaac-opoku-manu?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bsy%2FrhL%2F0St26ZVB00Nfm6A%3D%3D" target="_blank" class="p-1 hover:bg-[lightgray] bg-[#FFFFFF] w-fit hover:translate-y-1 easy-to-use duration-200 rounded-3xl border border-primaryColor text-primaryColor text-[12px] font-bold"><img src="./icons/icons8-linked-in-48.png" class="w-[30px] " alt="" srcset=""></a>
+
+        <a href="mailto:isaacmanuopoku@gmail.com" class="p-1 hover:bg-[lightgray] bg-[#FFFFFF] w-fit hover:translate-y-1 easy-to-use duration-200 rounded-3xl border border-primaryColor text-primaryColor text-[12px] font-bold"><img src="./icons/icons8-gmail-48.png" class="w-[30px]" alt="" srcset=""></a>
+
+      </div>
+
+    </div>
+
+  </footer>
   
   <script src="./script/main.js"></script>
 </body>
