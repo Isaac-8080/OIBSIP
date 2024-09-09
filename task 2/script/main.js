@@ -7,7 +7,7 @@ const savedLocalStorage = localStorage.getItem('theme', 'light'); // getting the
 
 // localStorage to check if the theme is light
 if (savedLocalStorage === 'light') {
-
+  
   body.classList.add('light-theme');
 
   document.querySelector('#nav').classList.add('light-theme');
@@ -133,13 +133,17 @@ for (let i = 0; i < getExitNavMenu.length; i++) {
 // navbar opacity fixed on scroll
 document.addEventListener('scroll', () => {
 
-  if (window.scrollY > 100) {
+  if (window.scrollY > 5) {
 
     document.querySelector('#nav').classList.remove('navbar-transparent');
-        
+    
+    document.querySelector('#backToTop').classList.remove('hidden');
+    
   } else {
     
     document.querySelector('#nav').classList.add('navbar-transparent');
+
+    document.querySelector('#backToTop').classList.add('hidden');
 
   }
   
