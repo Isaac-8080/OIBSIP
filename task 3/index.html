@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task 3</title>
+  <link rel="stylesheet" href="./stylesheet/style.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.webp" type="image/x-icon" sizes="32x32">
+
+  <!-- google icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+  <!-- main element -->
+  <main>
+
+    <div class="main-container">
+
+      <div class="wrapper p-[40px] md:p-[80px]">
+
+        <h1 class="heading">Temperature converter</h1>
+
+        <div class="grid-container">
+
+          <div class="grid-item">
+            <label for="userInput">Degrees</label>
+            <input type="number" id="userInput" class="md:w-[200px]">
+            <p id="error" class="text-[14px]"></p>
+          </div>
+          
+          <div class="grid-item">
+            <label for="select">Type</label>
+            <select name="" id="select" class="md:w-[200px] text-[gray] focus:text-[#000000]">
+              <option value="fahrenheit">Fahrenheit</option>
+              <option value="celsius">Celsius</option>
+            </select>
+          </div>
+          
+          <div class="grid-item">
+            <label for="results">Results</label>
+            <p id="results" class="font-medium"></p>
+          </div>
+
+          <div class="grid-item">
+            <button id="calcBtn">Calculate</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+  </main>
+
+  <script src="./script/app.js"></script>
+</body>
+</html>
