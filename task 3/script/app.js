@@ -1,9 +1,9 @@
-
+// selects the calculate button
 const getCalcBtn = document.querySelector('#calcBtn');
 
 getCalcBtn.addEventListener('click', () => {
 
-  // getting users input
+  // getting users input value from the DOM
   const getUserInput = parseInt(document.querySelector('#userInput').value);
   const getError = document.querySelector('#error');
   const getSelect = document.querySelector('#select').value;
@@ -11,11 +11,11 @@ getCalcBtn.addEventListener('click', () => {
 
   // output a message if the user inputs nothing
   if (!getUserInput) {
-    getError.innerHTML = 'All fields are required';
+    getError.innerHTML = 'All fields are required!';
     getError.style.color = 'red';
   }
 
-  // 
+  // prevent NaN to be printed if the input is not a number
   if (isNaN(getUserInput)) {
     getResults = getUserInput;
   }
